@@ -1,0 +1,194 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  color: white;
+  background-color: rgb(67, 67, 238);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  color: white;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.header input {
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+.button-add-todo {
+  width: 70px;
+  height: 87px;
+  border: none;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.button-show-complete-todos {
+  margin: 2rem 0 2rem 0;
+  padding: 0.4rem;
+  border: none;
+  background-color: white;
+  color: rgb(80, 79, 79);
+  cursor: pointer;
+}
+
+.todoList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  border: 2px solid grey;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+.todo {
+  color: white;
+  margin: 10px;
+}
+
+.todo-title {
+  margin-bottom: 0;
+}
+
+.todo-title,
+.todo-description {
+  color: rgb(80, 79, 79);
+}
+
+.todo-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 209, 228);
+}
+
+.todo-checked--true {
+  background-color: rgb(202, 233, 202);
+}
+
+.button-add-subtasks {
+  background-color: white;
+  cursor: pointer;
+  border: 1.2px solid rgb(153, 150, 150);
+  padding: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.todo-subtask-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.todo-subtask {
+  background-color: rgb(139, 138, 138);
+  padding: 0.3rem;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+
+.subtask-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.subtask-buttons button {
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.button-check-subtask {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: green;
+  cursor: pointer;
+}
+
+.button-remove-subtask {
+  font-size: 1rem;
+  background-color: rgb(155, 37, 37);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-subtasks-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.todo-subtasks-input button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  margin: 0.3rem;
+}
+
+.todo-buttons {
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.todo-buttons button {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.button-check-todo {
+  color: green;
+}
+
+.button-remove-todo {
+  color: red;
+}
