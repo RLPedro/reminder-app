@@ -1,6 +1,3 @@
-// TUTORIAL:
-// https://medium.com/swlh/typescript-with-mongoose-and-node-express-24073d51d2ee
-
 import * as dotenv from "dotenv";
 dotenv.config();
 import express, { Request, Response } from 'express';
@@ -8,11 +5,9 @@ import path from 'path';
 import * as socketio from "socket.io";
 import mongoose from 'mongoose';
 import { Todo } from './models/todo';
-// import { TodoDoc } from "./models/todo";
 
 const app = express();
 app.use(express.json());
-// app.use(todoRouter);
 app.use('/', express.static(path.join(__dirname, 'client/build')));
 
 const PORT: string | number = process.env.PORT || 4000;
